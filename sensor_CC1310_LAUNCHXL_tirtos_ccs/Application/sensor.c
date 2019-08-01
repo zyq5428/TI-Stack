@@ -108,8 +108,8 @@
 #define MAX_REPORTING_INTERVAL 360000
 
 /* Polling Interval Min and Max (in milliseconds) */
-#define MIN_POLLING_INTERVAL 1000
-//#define MIN_POLLING_INTERVAL 100
+//#define MIN_POLLING_INTERVAL 1000
+#define MIN_POLLING_INTERVAL 100
 #define MAX_POLLING_INTERVAL 10000
 
 /* Blink Time for Identify LED Request (in milliseconds) */

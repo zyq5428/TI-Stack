@@ -222,8 +222,8 @@ extern "C"
 #define CONFIG_PAN_CONFIG_SOLICIT_CLK_DURATION    6000
 /*! Default Reporting Interval - in milliseconds. It will get updated upon
  reception of a config request message */
-#define CONFIG_REPORTING_INTERVAL  180000
-//#define CONFIG_REPORTING_INTERVAL  500
+//#define CONFIG_REPORTING_INTERVAL  180000
+#define CONFIG_REPORTING_INTERVAL  500
 #else
 /*! Default Polling interval in milliseconds. It will get updated upon reception
  of a config request message */
