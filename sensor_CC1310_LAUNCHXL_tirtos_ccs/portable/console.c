@@ -52,6 +52,12 @@
 /* Example/Board Header files */
 #include "Board.h"
 
+#include "smsgs.h"
+#include "mac_util.h"
+#include "api_mac.h"
+#include "sensor.h"
+extern Smsgs_tempSensorField_t tempSensor;
+
 /* Console display strings */
 const char consoleDisplay[]   = "\fConsole (h for help)\r\n";
 const char helpPrompt[]       = "Valid Commands\r\n"                  \
@@ -125,6 +131,10 @@ void simpleConsole(UART_Handle uart)
 
         switch (cmd) {
             case 't':
+                tempSensor.objectTemp = localTemperatureC;
+                tempSensor.ambienceTemp = localTemperatureC;
+                Util_setEvent(&Sensor_events, EXT_SENSOR_READING_TIMEOUT_EVT);
+
                 UART_write(uart, tempStartDisplay, sizeof(tempStartDisplay));
                 /*
                  *  Make sure we are accessing the global float temperature variables

@@ -65,6 +65,8 @@ extern "C"
  Constants and definitions
  *****************************************************************************/
 
+#define EXT_SENSOR_READING_TIMEOUT_EVT 0x0004
+
 /*! Event ID - Start the device in the network */
 #define SENSOR_START_EVT 0x0001
 /*! Event ID - Reading Timeout Event */

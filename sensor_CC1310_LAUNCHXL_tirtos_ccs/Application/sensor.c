@@ -175,7 +175,8 @@ STATIC Smsgs_configReqMsg_t configSettings;
  Temp Sensor field - valid only if Smsgs_dataFields_tempSensor
  is set in frameControl.
  */
-STATIC Smsgs_tempSensorField_t tempSensor =
+//STATIC Smsgs_tempSensorField_t tempSensor =
+Smsgs_tempSensorField_t tempSensor =
     { 0 };
 
 /*!
@@ -513,6 +514,15 @@ void Sensor_process(void)
 
         /* Clear the event */
         Util_clearEvent(&Sensor_events, SENSOR_START_EVT);
+    }
+
+    if(Sensor_events & EXT_SENSOR_READING_TIMEOUT_EVT)
+    {
+      /* Process Sensor Reading Message Event */
+      processSensorMsgEvt();
+
+      /* Clear the event */
+      Util_clearEvent(&Sensor_events, EXT_SENSOR_READING_TIMEOUT_EVT);
     }
 
     /* Is it time to send the next sensor data message? */
