@@ -120,8 +120,8 @@ extern "C"
  Reporting Interval - in milliseconds to be set on connected devices using
  configuration request messages
  */
-#define CONFIG_REPORTING_INTERVAL 90000
-//#define CONFIG_REPORTING_INTERVAL 1000
+//#define CONFIG_REPORTING_INTERVAL 90000
+#define CONFIG_REPORTING_INTERVAL 1000
 /*!
  Polling interval in milliseconds to be set on connected devices using
  configuration request messages. Must be greater than or equal to default
