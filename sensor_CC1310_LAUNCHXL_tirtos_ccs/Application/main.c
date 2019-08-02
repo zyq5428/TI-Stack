@@ -393,6 +393,8 @@ void macHalAssertHandler(void)
     Main_assertHandler(MAIN_ASSERT_MAC);
 }
 
+
+extern int main_app(void);
 /*!
  * @brief       "main()" function - starting point
  */
@@ -463,6 +465,8 @@ int main(void)
     IOCPortConfigureSet(IOID_8, IOC_PORT_RFC_TRC, IOC_STD_OUTPUT
                     | IOC_CURRENT_4MA | IOC_SLEW_ENABLE);
 #endif /* DEBUG_SW_TRACE */
+
+    main_app();
 
     BIOS_start(); /* enable interrupts and start SYS/BIOS */
 

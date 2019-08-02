@@ -133,4 +133,5 @@ Application/PALNA \
 Application/Services \
 Application \
 Application/osal_port \
+portable \
 

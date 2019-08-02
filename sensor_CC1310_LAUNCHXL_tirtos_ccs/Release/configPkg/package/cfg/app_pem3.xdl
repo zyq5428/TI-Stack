@@ -675,6 +675,12 @@ SECTIONS
 
 /* Content from ti.sysbios.xdcruntime (null): */
 
+/* Content from ti.sysbios.rts.ti (ti/sysbios/rts/ti/linkcmd.xdt): */
+
+/* Content from ti.posix.tirtos (null): */
+
+/* Content from ti.sysbios.posix (null): */
+
 /* Content from ti.sysbios.utils (null): */
 
 /* Content from configPkg (null): */

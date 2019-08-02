@@ -43,6 +43,9 @@ ORDERED_OBJS += \
 "./Application/util_timer.obj" \
 "./Application/osal_port/osal_port.obj" \
 "./Application/osal_port/osal_port_timers.obj" \
+"./portable/console.obj" \
+"./portable/main_tirtos.obj" \
+"./portable/temperature.obj" \
 "../cc13x0lp.cmd" \
 $(GEN_CMDS__FLAG) \
 -l"D:/ti/simplelink_cc13x0_sdk_3_20_00_23/source/ti/ti154stack/library/tirtos/ccs/bin/maclib_secure_cc13x0.a" \
@@ -71,6 +74,7 @@ RMDIR := RMDIR /S/Q
 -include Application/Services/subdir_vars.mk
 -include Application/subdir_vars.mk
 -include Application/osal_port/subdir_vars.mk
+-include portable/subdir_vars.mk
 -include subdir_rules.mk
 -include Application/LaunchPad/subdir_rules.mk
 -include Application/MAC/HAL/common/subdir_rules.mk
@@ -81,6 +85,7 @@ RMDIR := RMDIR /S/Q
 -include Application/Services/subdir_rules.mk
 -include Application/subdir_rules.mk
 -include Application/osal_port/subdir_rules.mk
+-include portable/subdir_rules.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -214,9 +219,9 @@ sensor_CC1310_LAUNCHXL_tirtos_ccs.hex: $(EXE_OUTPUTS)
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(GEN_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)
 	-$(RM) "CC1310_LAUNCHXL.obj" "CC1310_LAUNCHXL_fxns.obj" "ccfg.obj" "Application\LaunchPad\board_gpio.obj" "Application\LaunchPad\board_key.obj" "Application\LaunchPad\board_lcd.obj" "Application\LaunchPad\board_led.obj" "Application\MAC\HAL\common\hal_appasrt.obj" "Application\MAC\HAL\target\dbg.obj" "Application\MAC\HAL\target\hal_aes.obj" "Application\MAC\HAL\target\hal_ccm.obj" "Application\MAC\HAL\target\hal_flash_wrapper.obj" "Application\MAC\HAL\target\hal_rtc_wrapper.obj" "Application\MAC\HAL\target\hal_trng_wrapper.obj" "Application\MAC\HAL\target\pwrmon.obj" "Application\MAC\HighLevel\mac_cfg.obj" "Application\MAC\LowLevel\mac_settings.obj" "Application\PALNA\board_palna.obj" "Application\Services\nvocop.obj" "Application\Services\nvoctp.obj" "Application\Services\saddr.obj" "Application\api_mac.obj" "Application\jdllc.obj" "Application\macTask.obj" "Application\mac_user_config.obj" "Application\mac_util.obj" "Application\main.obj" "Application\sensor.obj" "Application\ssf.obj" "Application\uart_printf.obj" 
-	-$(RM) "Application\util_timer.obj" "Application\osal_port\osal_port.obj" "Application\osal_port\osal_port_timers.obj" 
+	-$(RM) "Application\util_timer.obj" "Application\osal_port\osal_port.obj" "Application\osal_port\osal_port_timers.obj" "portable\console.obj" "portable\main_tirtos.obj" "portable\temperature.obj" 
 	-$(RM) "CC1310_LAUNCHXL.d" "CC1310_LAUNCHXL_fxns.d" "ccfg.d" "Application\LaunchPad\board_gpio.d" "Application\LaunchPad\board_key.d" "Application\LaunchPad\board_lcd.d" "Application\LaunchPad\board_led.d" "Application\MAC\HAL\common\hal_appasrt.d" "Application\MAC\HAL\target\dbg.d" "Application\MAC\HAL\target\hal_aes.d" "Application\MAC\HAL\target\hal_ccm.d" "Application\MAC\HAL\target\hal_flash_wrapper.d" "Application\MAC\HAL\target\hal_rtc_wrapper.d" "Application\MAC\HAL\target\hal_trng_wrapper.d" "Application\MAC\HAL\target\pwrmon.d" "Application\MAC\HighLevel\mac_cfg.d" "Application\MAC\LowLevel\mac_settings.d" "Application\PALNA\board_palna.d" "Application\Services\nvocop.d" "Application\Services\nvoctp.d" "Application\Services\saddr.d" "Application\api_mac.d" "Application\jdllc.d" "Application\macTask.d" "Application\mac_user_config.d" "Application\mac_util.d" "Application\main.d" "Application\sensor.d" "Application\ssf.d" "Application\uart_printf.d" "Application\util_timer.d" "Application\osal_port\osal_port.d" 
-	-$(RM) "Application\osal_port\osal_port_timers.d" 
+	-$(RM) "Application\osal_port\osal_port_timers.d" "portable\console.d" "portable\main_tirtos.d" "portable\temperature.d" 
 	-$(RMDIR) $(GEN_MISC_DIRS__QUOTED)
 	-@echo 'Finished clean'
 	-@echo ' '

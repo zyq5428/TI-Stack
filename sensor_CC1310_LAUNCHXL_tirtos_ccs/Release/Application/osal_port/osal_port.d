@@ -196,6 +196,14 @@ Application/osal_port/osal_port.obj: D:/ti/xdctools_3_51_01_18_core/packages/xdc
 Application/osal_port/osal_port.obj: D:/ti/simplelink_cc13x0_sdk_3_20_00_23/kernel/tirtos/packages/ti/sysbios/heaps/package/package.defs.h
 Application/osal_port/osal_port.obj: D:/ti/xdctools_3_51_01_18_core/packages/xdc/runtime/Memory.h
 Application/osal_port/osal_port.obj: D:/ti/xdctools_3_51_01_18_core/packages/xdc/runtime/IHeap.h
+Application/osal_port/osal_port.obj: D:/ti/simplelink_cc13x0_sdk_3_20_00_23/kernel/tirtos/packages/ti/sysbios/gates/GateMutex.h
+Application/osal_port/osal_port.obj: D:/ti/xdctools_3_51_01_18_core/packages/xdc/runtime/Types.h
+Application/osal_port/osal_port.obj: D:/ti/xdctools_3_51_01_18_core/packages/xdc/runtime/IInstance.h
+Application/osal_port/osal_port.obj: D:/ti/simplelink_cc13x0_sdk_3_20_00_23/kernel/tirtos/packages/ti/sysbios/gates/package/package.defs.h
+Application/osal_port/osal_port.obj: D:/ti/xdctools_3_51_01_18_core/packages/xdc/runtime/Assert.h
+Application/osal_port/osal_port.obj: D:/ti/xdctools_3_51_01_18_core/packages/xdc/runtime/IGateProvider.h
+Application/osal_port/osal_port.obj: D:/ti/simplelink_cc13x0_sdk_3_20_00_23/kernel/tirtos/packages/ti/sysbios/knl/Task.h
+Application/osal_port/osal_port.obj: D:/ti/simplelink_cc13x0_sdk_3_20_00_23/kernel/tirtos/packages/ti/sysbios/knl/Semaphore.h
 Application/osal_port/osal_port.obj: D:/ti/simplelink_cc13x0_sdk_3_20_00_23/source/ti/ti154stack/common/heapmgr/rtos_heaposal.h
 Application/osal_port/osal_port.obj: D:/ti/simplelink_cc13x0_sdk_3_20_00_23/kernel/tirtos/packages/ti/sysbios/heaps/HeapCallback.h
 Application/osal_port/osal_port.obj: D:/ti/simplelink_cc13x0_sdk_3_20_00_23/kernel/tirtos/packages/ti/sysbios/heaps/HeapMem.h
@@ -427,6 +435,14 @@ D:/ti/xdctools_3_51_01_18_core/packages/xdc/runtime/IInstance.h:
 D:/ti/simplelink_cc13x0_sdk_3_20_00_23/kernel/tirtos/packages/ti/sysbios/heaps/package/package.defs.h: 
 D:/ti/xdctools_3_51_01_18_core/packages/xdc/runtime/Memory.h: 
 D:/ti/xdctools_3_51_01_18_core/packages/xdc/runtime/IHeap.h: 
+D:/ti/simplelink_cc13x0_sdk_3_20_00_23/kernel/tirtos/packages/ti/sysbios/gates/GateMutex.h: 
+D:/ti/xdctools_3_51_01_18_core/packages/xdc/runtime/Types.h: 
+D:/ti/xdctools_3_51_01_18_core/packages/xdc/runtime/IInstance.h: 
+D:/ti/simplelink_cc13x0_sdk_3_20_00_23/kernel/tirtos/packages/ti/sysbios/gates/package/package.defs.h: 
+D:/ti/xdctools_3_51_01_18_core/packages/xdc/runtime/Assert.h: 
+D:/ti/xdctools_3_51_01_18_core/packages/xdc/runtime/IGateProvider.h: 
+D:/ti/simplelink_cc13x0_sdk_3_20_00_23/kernel/tirtos/packages/ti/sysbios/knl/Task.h: 
+D:/ti/simplelink_cc13x0_sdk_3_20_00_23/kernel/tirtos/packages/ti/sysbios/knl/Semaphore.h: 
 D:/ti/simplelink_cc13x0_sdk_3_20_00_23/source/ti/ti154stack/common/heapmgr/rtos_heaposal.h: 
 D:/ti/simplelink_cc13x0_sdk_3_20_00_23/kernel/tirtos/packages/ti/sysbios/heaps/HeapCallback.h: 
 D:/ti/simplelink_cc13x0_sdk_3_20_00_23/kernel/tirtos/packages/ti/sysbios/heaps/HeapMem.h: 
